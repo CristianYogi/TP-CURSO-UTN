@@ -1,0 +1,294 @@
+#parte-1{
+    display: flex;
+    width: 100%;
+}
+
+#carouselExampleCaptions{
+    margin: 30px;
+    width: 75%;
+
+   
+}
+
+.carousel-caption{
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+
+
+
+
+#contenedor-destacados{
+    width: 20%;
+    display: flex;
+}
+
+#destacados{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 30px 0px;
+    box-shadow: 1px 1px 5px 1px black;
+    
+}
+
+#destacados p{
+    word-wrap: break-word;
+}
+
+#separador-2{
+    width: 3px;
+    height: inherit;
+    margin: 30px 0px;
+
+    
+    background-color: #14213d;
+}
+
+#destacados h2{
+    text-align: center;
+    background-color: black;
+    border-top: 2px solid #FCA311;
+    
+    color: #f8edeb;
+    padding: 7px 0px;
+    margin: 0px;
+}
+
+.juegos-destacados{
+    display: flex;
+    
+    width: 100%;
+    height: 21%;
+
+    /* border-left: 2px solid black; */
+    
+
+}
+
+.color-1{
+    color: black;
+    background-color: #f7fff7;
+}
+
+.color-2{
+    color: snow;
+    background-color: #495057;
+}
+
+#contador{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    width: 15%;
+    height: 100%;
+
+    border-right: 3px solid black;
+
+    font-size: 2rem;
+}
+
+#cont-titulo-puntuacion{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#titulo{
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 50%;
+
+    border-bottom: 3px solid black;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#puntuacion{
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 50%;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#parte-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 60px 0px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contenedor-mes{
+    display: flex;
+    width: 100%;
+
+    min-width: 300px;
+    
+}
+
+#contenedor-sig{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 1px 1px 8px 1px black;
+
+    margin: 50px 0px;
+    padding: 40px;
+    width: 80%;
+    background-color: #edf2f4;
+
+}
+
+.contenedor-prox-juegos{
+
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+.juegosprox{
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    
+}
+
+/* .juegosprox span{
+    position: absolute;
+    right: 0px;
+} */
+
+.juegosprox a{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+}
+
+.juegosprox:hover{
+    background-color: #2b2d42;
+    color: white;
+}
+
+.fecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    min-width: 100px;
+}
+
+
+/* #titulo-juegos-proximos{
+    text-align: center;
+    margin-bottom: 100px;
+} */
+
+.borde1{
+    border-right: 10px solid #2a9d8f;
+}
+
+.borde2{
+    border-right: 10px solid #e9c46a;
+}
+
+.borde3{
+    border-right: 10px solid #f4a261;
+}
+
+.borde4{
+    border-right: 10px solid #e76f51;
+}
+
+.borde5{
+    border-right: 10px solid #2b2d42;
+}
+
+
+
+
+@media (max-width:1024px){
+
+    #parte-1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenedor-destacados{
+        width: 80%;
+    }
+
+    #contenedor-sig{
+        font-size: .8em;
+    }
+
+
+}
+
+@media (max-width:768px){
+    #contenedor-sig{
+        flex-direction: column;
+        align-items: initial;
+
+    }
+}
+
+@media (max-width:425px){
+    .juegosprox{
+        font-size: .8em;
+        margin-left: 5px;
+    }
+
+   
+
+    #contenedor-sig{
+        padding: 5px;
+        font-size: .7em;
+        justify-content: left;
+        align-items: initial;
+    }
+
+    .fecha{
+        width: 100px;
+    }
+}
+
+@media (max-width:375px){
+    .juegosprox span{
+        display: none;
+    }
+}
